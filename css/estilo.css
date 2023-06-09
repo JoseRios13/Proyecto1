@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.head{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(48, 208, 208, 0.5) 0%, rgba(51, 8, 103, 0.5) 100%), url(/img/womanLaptop.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.headerdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.menu_nav a{
+    color: black;
+    text-decoration: none;
+    margin: 0;
+
+}
+
+.titulo{
+    font-size: 60px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.copy{
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.button{
+    padding: 10px;
+    width: 112px;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: darkblue;
+    color: white;
+}
+
+.cont-footer{
+    background-color: darkgray;
+}
+
+.hamburguesa{
+    position: fixed;
+    z-index: 10;
+    right: 20px;
+    top: 20px;
+    background-color: white;
+    height: 65px;
+    width: 65px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menu_nav{
+    position: fixed;
+    right: 0;
+    width: 0;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 50vw;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    transition: translate(110%);
+    transition: transform o.3s ease-in-out;
+}
+
+.hamburguesa:hover{
+    transform: translate(0);
+}
